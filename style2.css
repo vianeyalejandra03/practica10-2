@@ -1,0 +1,115 @@
+.botonimagen{
+    background-image:url(boton.png);
+  }
+  .reloj { width: 190px; height: 30px; padding: 5px 10px; border: 3px solid rgb(16, 101, 172); 
+    font: bold 1.5em dotum, "lucida sans", arial; 
+    text-align: center;
+    float: right; margin: 1em 3em 1em 1em;
+    color: rgb(14, 99, 99);
+ }
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+*
+{
+    margin 0 :
+    padding: 0;
+box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;}
+.container H1
+{
+    width: 100%;
+    font-family: cursive;
+    color:#000000;
+    font-size: 25px;
+    text-align:right;
+    margin-bottom: 10px;}
+.container .row100
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));}
+.container .row100 .col
+{position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;}
+.container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #0d0555;
+    font-weight:bold;}
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index:1;
+color:#000000;}
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;}
+.container .row100 .inputBox input:focus +.text,
+.container .row100 .inputBox input:valid + .text 
+{top: -35px;
+    left: -10px;}  .container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: #f7c56a;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;}.container .row100 .inputBox  input:focus ~ .line,
+.container .row100 .inputBox  input:valid ~ .line
+{height: 100%;}
+.container .row100 .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+.container .row100 .inputBox.textarea textarea{
+height: 100%;
+resize: none;}
+.container .row100 .inputBox textarea:focus +.text,
+.container .row100 .inputBox textarea:valid + .text 
+{ top: -35px;
+    left: -10px;}
+    
+a{
+    font: 20px Verdana;
+    text-decoration: none;
+    color: #230855;
+    border: 4px solid #190455;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition:background 1s,color 1s;
+}
+a:hover{
+    background: #f2f2f2;
+    color: #0489B1;
+}
